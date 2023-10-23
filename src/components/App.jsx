@@ -1,7 +1,8 @@
-import { Component } from "react"
+import { Component } from "react";
 import { ContactForm } from "./ContactForm/ContactForm";
-import { ContactList } from './ContactList/ContactList'
-import {FilterContact} from './FilterContact/FilterContact'
+import { ContactList } from './ContactList/ContactList';
+import { FilterContact } from './FilterContact/FilterContact';
+import { Section } from './Section/Section';
 export class App extends Component  {
 
  state = {
@@ -61,11 +62,15 @@ export class App extends Component  {
         background: 'linear-gradient( 45deg, #8cc8e6, #f1f389)'
       }}
        >
-    <h1>Phonebook</h1>
+         <Section
+         title="Phonebook"
+         />
          <ContactForm
            newContact={this.handleNewContact}
          />
-         <h2>Contacts</h2>
+         <Section
+         title="Contacts"
+         />
          <FilterContact
            filter={this.filter}
            handleChange={this.handleChange}

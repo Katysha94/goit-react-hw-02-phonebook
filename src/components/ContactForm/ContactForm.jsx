@@ -20,8 +20,13 @@ export class ContactForm extends Component {
             number: this.state.number,
         }
       this.props.newContact(addContact);
+      
       const form = evt.currentTarget;
       form.reset();
+      this.setState({
+        name: '',
+        number: '',
+      });
     }
 
     handleInputChange = (evt) => {

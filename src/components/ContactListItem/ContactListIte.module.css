@@ -1,20 +1,22 @@
-li {
+.contactListItem {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 40px;
+    font-size: 40px;
 }
 
-li button {
-    margin-left: 40px;
+
+.contactListBtn {
+margin-left: 40px;
     background-color: #a0a0a0;
     border: none;
     border-radius: 5px;
     display: inline-flex;
     font-size: 20px;
     padding: 5px 5px;
-    
 }
 
-li button:hover,
-li button:focus {
+.contactListBtn:hover,
+.contactListBtn:focus {
     background-color: red;
 }
+
+
