@@ -52,7 +52,7 @@ export class App extends Component  {
      return (
     <div
       style={{
-        minHeight: '00vh',
+        minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
